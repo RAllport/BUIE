@@ -1,0 +1,5 @@
+<BElement name="parentElemant">
+    <BCheckBox name="chackbox1" x="50" y="500" label="CHECHBOX 1" />
+    <BButton name="button1" x="50" y ="50" label="BUTTON 1" />
+    
+</BElement>
