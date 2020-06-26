@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="BUIE" package="borris" version="1.0.0" company="Rohaan k. Allport" />
+	<app main="Main" path="bin" file="BUIE" />
+
+    <window background="#333333" fps="30" width="1920" height="1080"/>
+    <window orientation="landscape" vsync="false" antialiasing="0" if="cpp" />
+	
+	<source path="src" />
+	<haxelib name="openfl" />
+	<haxelib name="actuate" />
+	<!--<haxelib name="lime" />-->
+
+
+
+	<icon path="assets/img/icon-48x48.png" />
+	<assets path="assets/img" rename="graphics" />
+	<assets path="assets/fonts" rename="fonts" />
+	<assets path="assets/buieXML" />
+	
+</project>
