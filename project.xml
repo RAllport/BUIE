@@ -1,22 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
+	<!-- NMML reference: https://gist.github.com/1763850 -->
 	
-	<meta title="BUIE" package="borris" version="1.0.0" company="Rohaan k. Allport" />
-	<app main="Main" path="bin" file="BUIE" />
-
-    <window background="#333333" fps="30" width="1920" height="1080"/>
-    <window orientation="landscape" vsync="false" antialiasing="0" if="cpp" />
+	<!-- metadata, make sure 'package' is at least 3 segments (ie. com.mycompany.myproject) -->
+	<meta title="BorrisUI" package="BorrisUI" version="1.0.0" company="Rohaan Allport" />
 	
+	<!-- output -->
+	<app main="Main_old" file="BorrisUI" path="bin" />
+	
+	<window background="#000000" fps="30" />
+	<window width="1920" height="1080" unless="mobile" />
+	<window orientation="landscape" vsync="false" antialiasing="0" if="cpp" />
+    <window resizable="false" unless="mobile" />
+	
+	<!-- classpath, haxe libs -->
 	<source path="src" />
 	<haxelib name="openfl" />
 	<haxelib name="actuate" />
 	<!--<haxelib name="lime" />-->
 
-
-
+	<!-- assets -->
 	<icon path="assets/img/icon-48x48.png" />
 	<assets path="assets/img" rename="graphics" />
 	<assets path="assets/fonts" rename="fonts" />
 	<assets path="assets/buieXML" />
+
+	<!-- optimize output
+	<haxeflag name="-dce full" /> -->
 	
 </project>
